@@ -153,7 +153,7 @@ export default class BasicGLProvider implements GLProvider {
   }
 
   /**
-   * Returns the container that holds the canvas for this graph.
+   * @return {HTMLElement} Returns the container that holds the canvas for this graph.
    */
   container():HTMLElement {
     return this._container;
@@ -167,14 +167,14 @@ export default class BasicGLProvider implements GLProvider {
   };
 
   /**
-   * Retrieves the current background color.
+   * @return {Color} Retrieves the current background color.
    */
   backgroundColor():Color {
     return this._backgroundColor;
   };
 
   /**
-   * Returns whether the window has a nonzero client width and height.
+   * @return {boolean} Returns whether the window has a nonzero client width and height.
    */
   canProject():boolean {
     const displayWidth = this.getWidth();
