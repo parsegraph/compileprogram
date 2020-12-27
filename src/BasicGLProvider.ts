@@ -141,7 +141,7 @@ export default class BasicGLProvider implements GLProvider {
     return this._explicitWidth || this.container().clientWidth;
   };
 
-  width() {
+  width():number {
     return this.getWidth();
   }
 
