@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="compileprogram.js"></script>
+</head>
+<body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const prog = new compileprogram.BasicGLProvider();
+        prog.setExplicitSize(400, 400);
+        document.body.appendChild(prog.container());
+        requestAnimationFrame(()=>{
+            prog.render();
+        });
+    });
+</script>
+</body>
+</html>
