@@ -1,8 +1,8 @@
 var assert = require("assert");
-import todo from "../dist/compileprogram";
+import {compileProgram} from "../dist/compileprogram";
 
-describe("Package", function () {
+describe("compileProgram", function () {
   it("works", ()=>{
-    assert.equal(todo(), 42);
+    assert.ok(compileProgram);
   });
 });
