@@ -1,5 +1,7 @@
 export default interface GLProvider {
-  gl():object;
-  shaders():object;
+  gl():WebGLRenderingContext;
+  shaders():{ [shaderName:string]:WebGLProgram };
   id():string;
+  container():HTMLElement;
+  canvas():HTMLCanvasElement;
 }
