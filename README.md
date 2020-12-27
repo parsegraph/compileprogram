@@ -1,24 +1,10 @@
-# microproject
+# compileProgram
 
-This is for Node projects:
+It is common for multiple WebGL painters to use the same shader program. But each
+painter would need to compile its own version of the program.
 
-## Setup
+A global registry would alleviate this problem, but it's possible that different GL
+contexts would exist within the same process.
 
-1. Pick a new package name.
-
-2. Go to https://github.com/parsegraph/ and create a new repository using that name.
-
-3. Clone latest microproject from https://github.com/parsegraph/microproject
-
-4. Run ./update-package-name.sh with your package name:
-
-<pre>
-  # Set the package name to test
-  ./update-package-name.sh test
-</pre>
-
-5. Commit (e.g. "Give package a name")
-
-6. Push the repository to Github.
-
-See DEVELOPING.md and DEPLOYING.md
+This library solves this problem by using a shared object that provides the GL instance,
+as well as an shaders map, from shader name to the compiled WebGL program instance.
