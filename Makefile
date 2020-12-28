@@ -19,14 +19,6 @@ demo: dist/$(DIST_NAME).js $(DECLARATION_FILES)
 	npm run demo
 .PHONY: demo
 
-dist/$(DIST_NAME).d.ts: dist/src/$(DIST_NAME).d.ts
-	cp -u $^ $@
-
-dist/$(DIST_NAME).d.ts.map: dist/src/$(DIST_NAME).d.ts.map
-	cp -u $^ $@
-
-dist/src/$(DIST_NAME).d.ts dist/src/$(DIST_NAME).d.ts.map: dist/$(DIST_NAME).js
-
 check:
 	npm run test
 .PHONY: check
@@ -55,6 +47,7 @@ doc: esdoc
 
 dist/$(DIST_NAME).js: package.json package-lock.json $(SCRIPT_FILES)
 	npm run build
+	mv dist/src/* dist/
 
 clean:
 	rm -rf dist .nyc_output

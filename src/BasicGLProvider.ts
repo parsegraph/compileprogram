@@ -159,11 +159,11 @@ export default class BasicGLProvider implements GLProvider {
     return this._container;
   };
 
-  setBackground(...args:Array<number>):void {
+  setBackground(color:Color|number, ...args:Array<number>):void {
     if (args.length > 1) {
-      return this.setBackground(new Color(...args));
+      return this.setBackground(new Color(<number>color, ...args));
     }
-    this._backgroundColor = args[0];
+    this._backgroundColor = <Color>color;
   };
 
   /**
