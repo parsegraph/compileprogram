@@ -1,6 +1,6 @@
 {
   "name": "parsegraph-compileprogram",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "compileprogram",
   "main": "dist/compileprogram.js",
   "types": "dist/compileprogram.d.ts",
