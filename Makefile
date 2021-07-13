@@ -1,10 +1,7 @@
 DIST_NAME = compileprogram
 
 SCRIPT_FILES = \
-	src/compileprogram.ts \
-	src/ProxyGLProvider.ts \
-	src/BasicGLProvider.ts \
-	src/GLProvider.ts
+	src/$(DIST_NAME).ts
 
 all: build lint test coverage esdoc
 
