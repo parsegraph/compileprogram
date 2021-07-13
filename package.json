@@ -1,15 +1,16 @@
 {
   "name": "parsegraph-compileprogram",
-  "version": "2.0.3",
+  "version": "2.0.4-dev",
   "description": "compileprogram",
-  "main": "dist/compileprogram.js",
-  "types": "dist/compileprogram.d.ts",
+  "main": "dist/parsegraph-compileprogram.js",
+  "types": "dist/parsegraph-compileprogram.d.ts",
   "scripts": {
     "coverage": "nyc npm run test",
     "test": "mocha -r @babel/register -r jsdom-global/register --recursive",
     "demo": "node demo/demo.js",
     "autobuild": "webpack --watch --config webpack.config.js",
-    "build": "webpack --config webpack.config.js"
+    "build": "webpack --config webpack.config.js",
+    "build-prod": "NODE_ENV=production webpack --config webpack.prod.js"
   },
   "repository": {
     "type": "git",
