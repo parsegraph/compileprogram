@@ -1,0 +1,17 @@
+{
+    "name": "parsegraph-compileprogram",
+    "version": "2.0.4",
+    "description": "compileprogram",
+    "main": "dist/parsegraph-compileprogram.js",
+    "types": "dist/parsegraph-compileprogram.d.ts",
+    "repository": {
+      "type": "git",
+      "url": "git+ssh://git@github.com/parsegraph/compileprogram.git"
+    },
+    "author": "Rainback, Inc.",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/parsegraph/compileprogram/issues"
+    },
+    "homepage": "https://github.com/parsegraph/compileprogram#readme"
+  }
