@@ -1,6 +1,6 @@
 {
   "name": "parsegraph-compileprogram",
-  "version": "2.0.7-dev",
+  "version": "2.0.8-dev",
   "description": "compileprogram",
   "main": "dist/parsegraph-compileprogram.js",
   "types": "dist/parsegraph-compileprogram.d.ts",
@@ -76,7 +76,7 @@
     "parsegraph-checkglerror": "^1.4.3",
     "parsegraph-color": "^1.4.3",
     "parsegraph-rect": "^1.4.4",
-    "parsegraph-shader": "^1.4.5",
+    "parsegraph-shader": "^1.4.6",
     "parsegraph-testsuite": "^1.4.3",
     "raw-loader": "^4.0.1",
     "ts-mocha": "^8.0.0",
