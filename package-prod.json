@@ -15,9 +15,11 @@
     },
     "homepage": "https://github.com/parsegraph/compileprogram#readme",
     "dependencies": {
-      "parsegraph-checkglerror": "^1.4.3",
       "parsegraph-color": "^1.4.3",
       "parsegraph-rect": "^1.4.4",
-      "parsegraph-shader": "^1.4.5"
+      "parsegraph-shader": "^1.4.11"
+    },
+    "peerDependencies": {
+      "parsegraph-checkglerror": "^1.4.7"
     }
   }

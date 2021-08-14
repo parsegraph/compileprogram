@@ -9,9 +9,6 @@ module.exports = {
     library: "parsegraph",
     libraryTarget: "umd",
   },
-  optimization: {
-    runtimeChunk: 'single'
-  },
   module: {
     rules: [
       {
