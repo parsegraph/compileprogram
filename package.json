@@ -73,7 +73,7 @@
     "express": "^4.17.1",
     "glslify-loader": "^2.0.0",
     "openssl": "^1.1.0",
-    "parsegraph-checkglerror": "^1.4.3",
+    "parsegraph-checkglerror": "^1.4.4-dev",
     "parsegraph-color": "^1.4.3",
     "parsegraph-rect": "^1.4.4",
     "parsegraph-shader": "^1.4.6",
