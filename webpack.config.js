@@ -25,7 +25,10 @@ module.exports = {
   },
   resolve: {
     extensions: [".js", ".ts", ".tsx", ".glsl"],
-    modules: [path.resolve(__dirname, "src"), "node_modules"],
+    modules: [
+      path.resolve(__dirname, "src"),
+      path.resolve(__dirname, "node_modules"),
+    ]
   },
   mode: "development",
   devtool: "eval-source-map",
