@@ -1,6 +1,6 @@
 {
     "name": "parsegraph-compileprogram",
-    "version": "2.0.13",
+    "version": "2.0.14",
     "description": "compileprogram",
     "main": "dist/parsegraph-compileprogram.js",
     "types": "dist/parsegraph-compileprogram.d.ts",
@@ -17,7 +17,7 @@
     "dependencies": {
       "parsegraph-color": "^1.4.3",
       "parsegraph-rect": "^1.4.4",
-      "parsegraph-shader": "^1.4.11"
+      "parsegraph-shader": "^1.4.12"
     },
     "peerDependencies": {
       "parsegraph-checkglerror": "^1.4.7"
