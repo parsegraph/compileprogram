@@ -1,6 +1,6 @@
 {
   "name": "parsegraph-compileprogram",
-  "version": "2.0.14-dev",
+  "version": "2.0.15-dev",
   "description": "compileprogram",
   "main": "dist/parsegraph-compileprogram.js",
   "types": "dist/parsegraph-compileprogram.d.ts",
@@ -75,13 +75,13 @@
     "openssl": "^1.1.0",
     "parsegraph-color": "^1.4.3",
     "parsegraph-rect": "^1.4.4",
-    "parsegraph-shader": "^1.4.12-dev",
+    "parsegraph-shader": "^1.4.13",
     "parsegraph-testsuite": "^1.4.3",
     "raw-loader": "^4.0.1",
     "ts-mocha": "^8.0.0",
     "webgl-mock": "^0.1.7"
   },
   "peerDependencies": {
-    "parsegraph-checkglerror": "^1.4.7-dev"
+    "parsegraph-checkglerror": "^1.4.8"
   }
 }
