@@ -1,6 +1,6 @@
 {
     "name": "parsegraph-compileprogram",
-    "version": "2.0.15",
+    "version": "2.0.16",
     "description": "compileprogram",
     "main": "dist/parsegraph-compileprogram.js",
     "types": "dist/parsegraph-compileprogram.d.ts",
@@ -15,7 +15,7 @@
     },
     "homepage": "https://github.com/parsegraph/compileprogram#readme",
     "dependencies": {
-      "parsegraph-color": "^1.4.3",
+      "parsegraph-color": "^1.4.4",
       "parsegraph-rect": "^1.4.4",
       "parsegraph-shader": "^1.4.12"
     },
