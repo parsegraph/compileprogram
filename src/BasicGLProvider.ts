@@ -192,7 +192,7 @@ export default class BasicGLProvider implements GLProvider {
    * @throws if the scene cannot be projected to, as determined by canProject
    */
   render():boolean {
-    this._container.style.backgroundColor = this._backgroundColor.asRGB();
+    this._container.style.backgroundColor = this._backgroundColor.asRGBA();
 
     const gl = this.gl();
     if (this.gl().isContextLost()) {
