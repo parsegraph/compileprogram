@@ -1,31 +1,31 @@
-import GLProvider from './GLProvider';
+import GLProvider from "./GLProvider";
 
 export default abstract class ProxyGLProvider implements GLProvider {
-  _glProvider:GLProvider;
+  _glProvider: GLProvider;
 
-  constructor(window:GLProvider) {
+  constructor(window: GLProvider) {
     this._glProvider = window;
   }
 
-  glProvider():GLProvider {
+  glProvider(): GLProvider {
     return this._glProvider;
   }
 
-  abstract id():string;
+  abstract id(): string;
 
-  shaders():{ [shaderName:string]:WebGLProgram } {
+  shaders(): { [shaderName: string]: WebGLProgram } {
     return this.glProvider().shaders();
   }
 
-  container():HTMLElement {
+  container(): HTMLElement {
     return this.glProvider().container();
   }
 
-  canvas():HTMLCanvasElement {
+  canvas(): HTMLCanvasElement {
     return this.glProvider().canvas();
   }
 
-  gl():WebGLRenderingContext {
+  gl(): WebGLRenderingContext {
     return this.glProvider().gl();
   }
 }

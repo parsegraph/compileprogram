@@ -1,15 +1,15 @@
-import GLProvider from './GLProvider';
-import ProxyGLProvider from './ProxyGLProvider';
-import BasicGLProvider from './BasicGLProvider';
+import GLProvider from "./GLProvider";
+import ProxyGLProvider from "./ProxyGLProvider";
+import BasicGLProvider from "./BasicGLProvider";
 
-import checkGLError, {ignoreGLErrors} from 'parsegraph-checkglerror';
-import {compileShader} from 'parsegraph-shader';
+import checkGLError, { ignoreGLErrors } from "parsegraph-checkglerror";
+import { compileShader } from "parsegraph-shader";
 
 function compileProgram(
-    window:GLProvider,
-    shaderName:string,
-    vertexShader:string,
-    fragShader:string,
+  window: GLProvider,
+  shaderName: string,
+  vertexShader: string,
+  fragShader: string
 ) {
   const gl = window.gl();
   const shaders = window.shaders();
@@ -22,51 +22,51 @@ function compileProgram(
 
   const program = gl.createProgram();
   checkGLError(
-      gl,
-      'compileProgram.createProgram(shaderName=\'',
-      shaderName,
-      ')',
+    gl,
+    "compileProgram.createProgram(shaderName='",
+    shaderName,
+    ")"
   );
 
   const compiledVertexShader = compileShader(
-      gl,
-      vertexShader,
-      gl.VERTEX_SHADER,
-      shaderName,
+    gl,
+    vertexShader,
+    gl.VERTEX_SHADER,
+    shaderName
   );
   checkGLError(
-      gl,
-      'compileProgram.compile vertex shader(shaderName=\'',
-      shaderName,
-      ')',
+    gl,
+    "compileProgram.compile vertex shader(shaderName='",
+    shaderName,
+    ")"
   );
 
   gl.attachShader(program, compiledVertexShader);
   checkGLError(
-      gl,
-      'compileProgram.attach vertex shader(shaderName=\'',
-      shaderName,
-      ')',
+    gl,
+    "compileProgram.attach vertex shader(shaderName='",
+    shaderName,
+    ")"
   );
 
   const compiledFragmentShader = compileShader(
-      gl,
-      fragShader,
-      gl.FRAGMENT_SHADER,
-      shaderName,
+    gl,
+    fragShader,
+    gl.FRAGMENT_SHADER,
+    shaderName
   );
   checkGLError(
-      gl,
-      'compileProgram.compile fragment shader(shaderName=\'',
-      shaderName,
-      ')',
+    gl,
+    "compileProgram.compile fragment shader(shaderName='",
+    shaderName,
+    ")"
   );
   gl.attachShader(program, compiledFragmentShader);
   checkGLError(
-      gl,
-      'compileProgram.attach fragment shader(shaderName=\'',
-      shaderName,
-      ')',
+    gl,
+    "compileProgram.attach fragment shader(shaderName='",
+    shaderName,
+    ")"
   );
 
   gl.linkProgram(program);
@@ -74,16 +74,16 @@ function compileProgram(
     const st = gl.getProgramParameter(program, gl.LINK_STATUS);
     if (!st) {
       throw new Error(
-          '\'' +
+        "'" +
           shaderName +
-          '\' shader program failed to link:\n' +
-          gl.getProgramInfoLog(program),
+          "' shader program failed to link:\n" +
+          gl.getProgramInfoLog(program)
       );
     }
     const err = gl.getError();
     if (err != gl.NO_ERROR && err != gl.CONTEXT_LOST_WEBGL) {
       throw new Error(
-          '\'' + shaderName + '\' shader program failed to link: ' + err,
+        "'" + shaderName + "' shader program failed to link: " + err
       );
     }
   }
@@ -93,9 +93,4 @@ function compileProgram(
   return program;
 }
 
-export {
-  compileProgram,
-  GLProvider,
-  BasicGLProvider,
-  ProxyGLProvider
-}
+export { compileProgram, GLProvider, BasicGLProvider, ProxyGLProvider };
