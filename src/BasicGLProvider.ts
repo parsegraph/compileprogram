@@ -49,7 +49,7 @@ export default class BasicGLProvider implements GLProvider {
     this._canvas.addEventListener(
       "webglcontextrestored",
       () => {
-        console.log("Context restored");
+        //console.log("Context restored");
         this.onContextChanged(false);
       },
       false
