@@ -6,7 +6,7 @@ module.exports = {
       commonjs:"parsegraph-checkglerror",
       commonjs2:"parsegraph-checkglerror",
       amd:"parsegraph-checkglerror",
-      root:"parsegraph"
+      root:"parsegraph_checkglerror"
     }
   },
   entry: path.resolve(__dirname, "src/compileprogram.ts"),
@@ -14,7 +14,7 @@ module.exports = {
     path: path.resolve(__dirname, "dist-prod"),
     filename: "parsegraph-compileprogram.js",
     globalObject: "this",
-    library: "parsegraph",
+    library: "parsegraph_compileprogram",
     libraryTarget: "umd",
   },
   module: {
