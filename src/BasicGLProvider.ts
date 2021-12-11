@@ -116,11 +116,15 @@ export default class BasicGLProvider implements GLProvider {
     return this._canvas;
   }
 
-  getSize(sizeOut?: Rect) {
+  getSize(sizeOut?: Rect): Rect {
+    if (!sizeOut) {
+      sizeOut = new Rect();
+    }
     sizeOut.setX(0);
     sizeOut.setY(0);
     sizeOut.setWidth(this.width());
     sizeOut.setHeight(this.height());
+    return sizeOut;
   }
 
   resize(w: number, h: number): void {
