@@ -20,6 +20,7 @@
       "parsegraph-shader": "^1.5.2"
     },
     "peerDependencies": {
+      "webgl-debug": "^2.0.1",
       "parsegraph-checkglerror": "^1.5.1"
     }
   }
