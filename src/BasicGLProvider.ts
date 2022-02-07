@@ -50,7 +50,7 @@ export default class BasicGLProvider implements GLProvider {
     return this._shaders;
   }
 
-  hasGL():boolean {
+  hasGL(): boolean {
     return !!this._gl;
   }
 
@@ -70,7 +70,7 @@ export default class BasicGLProvider implements GLProvider {
     throw new Error("GL context is not supported");
   }
 
-  hasCanvas():boolean {
+  hasCanvas(): boolean {
     return !!this._canvas;
   }
 
