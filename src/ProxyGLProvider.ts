@@ -1,4 +1,4 @@
-import GLProvider from "./GLProvider";
+import GLProvider, { Shaders } from "./GLProvider";
 
 export default abstract class ProxyGLProvider implements GLProvider {
   _glProvider: GLProvider;
@@ -7,13 +7,34 @@ export default abstract class ProxyGLProvider implements GLProvider {
     this._glProvider = window;
   }
 
+  setOnContextChanged(
+    listener: (isLost: boolean) => void,
+    listenerObj?: any
+  ): void {
+    this.glProvider().setOnContextChanged(listener, listenerObj);
+  }
+
   glProvider(): GLProvider {
     return this._glProvider;
   }
 
-  abstract id(): string;
+  width() {
+    return this.glProvider().width();
+  }
 
-  shaders(): { [shaderName: string]: WebGLProgram } {
+  canProject() {
+    return this.glProvider().canProject();
+  }
+
+  render() {
+    return this.glProvider().render();
+  }
+
+  height() {
+    return this.glProvider().height();
+  }
+
+  shaders(): Shaders {
     return this.glProvider().shaders();
   }
 
