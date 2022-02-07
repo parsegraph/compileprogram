@@ -2,6 +2,16 @@ export type Shaders = { [shaderName: string]: WebGLProgram };
 
 export default interface GLProvider {
   /**
+   * Returns true if this provider has a GL context.
+   */
+  hasGL(): boolean;
+
+  /**
+   * Returns true if this provider has a rendering canvas.
+   */
+  hasCanvas(): boolean;
+
+  /**
    * Returns the GL context for this provider.
    */
   gl(): WebGLRenderingContext;

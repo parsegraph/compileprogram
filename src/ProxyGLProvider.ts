@@ -42,8 +42,16 @@ export default abstract class ProxyGLProvider implements GLProvider {
     return this.glProvider().container();
   }
 
+  hasCanvas() {
+    return this.glProvider().hasCanvas();
+  }
+
   canvas(): HTMLCanvasElement {
     return this.glProvider().canvas();
+  }
+
+  hasGL() {
+    return this.glProvider().hasGL();
   }
 
   gl(): WebGLRenderingContext {
