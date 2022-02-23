@@ -3251,12 +3251,12 @@ parsegraph-checkglerror@^1.5.1:
   resolved "https://registry.yarnpkg.com/parsegraph-checkglerror/-/parsegraph-checkglerror-1.5.1.tgz#2ec0143978af5d86ec69fc4fee56a6711e70fbdd"
   integrity sha512-7gU9/W9yZEFRVQ39ldE02e1r+N2cBh9LEWW91Az/SUxch1PV5N9t7CtB+0RdL46px/fDGSwWmzFc3VARCneuzg==
 
-parsegraph-color@^1.4.4:
+parsegraph-color@^1.4.6:
   version "1.4.6"
   resolved "https://registry.yarnpkg.com/parsegraph-color/-/parsegraph-color-1.4.6.tgz#678f464cc531e19b7bdf4480135e37dd858520bd"
   integrity sha512-gOMXt8dTANqumQ/ZiGShRALtLcAYIKFDW9t5FU0bIiJUEodT4OoOGnXhrbhRuRTUVo7uJmdJLH1MEH+Ch7muWg==
 
-parsegraph-method@^1.4.10:
+parsegraph-method@^1.4.20:
   version "1.4.20"
   resolved "https://registry.yarnpkg.com/parsegraph-method/-/parsegraph-method-1.4.20.tgz#89097ebded9abab1691365c059fcfd48a0682213"
   integrity sha512-LFqTsUhgN1k6UOBMvbPNL8vBMWeWfP1bBFqcEFbA6iNxt5X7q6XsaOCUAAAB0lf87Wt7rX9Go1HA2PrdO8P7mQ==
@@ -3266,7 +3266,7 @@ parsegraph-rect@^1.4.5:
   resolved "https://registry.yarnpkg.com/parsegraph-rect/-/parsegraph-rect-1.4.5.tgz#aad0401b4c22381231014fd558ea967e01cdb45f"
   integrity sha512-hgsP9N15mYeSISgeMU2l1GHJEjAouuFgdQW89EGTav8ntM93xC628Lz5+mYvx/mljbuC5lR/OBSw6EuV0A9GxA==
 
-parsegraph-shader@^1.5.2:
+parsegraph-shader@^1.5.3:
   version "1.5.3"
   resolved "https://registry.yarnpkg.com/parsegraph-shader/-/parsegraph-shader-1.5.3.tgz#f1e4b56414a50328acf97768dc01af2c0847552e"
   integrity sha512-nAB1NXUC7wTJGLKaPP/UvKXcqcLOhp4+B9IUMozAWzNQvofe60R22wpQS3Y9IzFbzurDc9RSkR2ItnTJ1Cv8xg==
