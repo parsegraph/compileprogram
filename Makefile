@@ -1,7 +1,7 @@
 DIST_NAME = compileprogram
 
-SCRIPT_FILES =  \
-	src/compileprogram.ts \
+SCRIPT_FILES = \
+	src/index.ts \
 	src/ProxyGLProvider.ts \
 	src/GLProvider.ts \
 	src/DebugGLProvider.ts \
@@ -11,6 +11,6 @@ SCRIPT_FILES =  \
 	test/test.ts \
 	test/test.js
 
-EXTRA_SCRIPTS = 
+EXTRA_SCRIPTS =
 
 include ./Makefile.microproject
