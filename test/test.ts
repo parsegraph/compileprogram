@@ -1,6 +1,6 @@
 var assert = require("assert");
-import { compileProgram } from "../dist/parsegraph-compileprogram";
-import { BasicGLProvider } from "../dist/parsegraph-compileprogram";
+import { compileProgram } from "../src/index";
+import { BasicGLProvider } from "../src/index";
 
 import { mockDOM } from "node-canvas-webgl";
 mockDOM(window);
