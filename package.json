@@ -40,7 +40,7 @@
     "node-canvas-webgl": "^0.2.7",
     "parsegraph-color": "^1.4.6",
     "parsegraph-method": "^1.4.20",
-    "parsegraph-rect": "^1.4.5",
+    "parsegraph-rect": "^1.4.6",
     "parsegraph-shader": "^1.5.3",
     "prettier": "^2.5.1",
     "raw-loader": "^4.0.2",
