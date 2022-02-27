@@ -1,11 +1,14 @@
-import todo from ".";
+import { BasicGLProvider } from ".";
 
 document.addEventListener("DOMContentLoaded", () => {
   const root = document.getElementById("demo");
   root.style.position = "relative";
 
+  const glProvider = new BasicGLProvider();
+  glProvider.setExplicitSize(500, 500);
+
   const container = document.createElement("div");
-  container.innerHTML = `${todo()}`;
+  container.appendChild(glProvider.container());
   container.style.position = "absolute";
   container.style.left = "0px";
   container.style.top = "0px";
