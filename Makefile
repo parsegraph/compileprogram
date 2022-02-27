@@ -7,10 +7,12 @@ SCRIPT_FILES = \
 	src/GLProvider.ts \
 	src/DebugGLProvider.ts \
 	src/WebGL2Provider.ts \
+	src/glsl.d.ts \
 	src/BasicGLProvider.ts \
 	src/demo.ts \
 	test/test.ts
 
-EXTRA_SCRIPTS =
+EXTRA_SCRIPTS = \
+	src/microproject.glsl
 
 include ./Makefile.microproject
