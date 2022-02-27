@@ -36,6 +36,7 @@
     "jest": "^27.5.1",
     "jsdom": "^19.0.0",
     "jsdom-global": "^3.0.2",
+    "node-canvas-webgl": "^0.2.7",
     "parsegraph-color": "^1.4.6",
     "parsegraph-method": "^1.4.20",
     "parsegraph-rect": "^1.4.5",
@@ -52,6 +53,7 @@
     "webpack-cli": "^4.9.2"
   },
   "peerDependencies": {
-    "parsegraph-checkglerror": "^1.5.2"
+    "parsegraph-checkglerror": "^1.5.2",
+    "webgl-debug": "^2.0.1"
   }
 }
