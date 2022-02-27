@@ -1,4 +1,4 @@
-var assert = require("assert");
+const assert = require("assert");
 import { compileProgram } from "../src/index";
 import { BasicGLProvider } from "../src/index";
 

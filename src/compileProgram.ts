@@ -1,4 +1,4 @@
-import GLProvider, { Shaders } from "./GLProvider";
+import GLProvider from "./GLProvider";
 import checkGLError, { ignoreGLErrors } from "parsegraph-checkglerror";
 import { compileShader } from "parsegraph-shader";
 
