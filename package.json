@@ -1,6 +1,6 @@
 {
   "name": "parsegraph-compileprogram",
-  "version": "2.2.6",
+  "version": "2.2.7",
   "description": "compileprogram",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
