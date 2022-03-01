@@ -16,7 +16,7 @@
   "homepage": "https://github.com/parsegraph/compileprogram#readme",
   "dependencies": {
     "parsegraph-color": "^1.4.7",
-    "parsegraph-method": "^1.4.20",
+    "parsegraph-method": "^1.4.22",
     "parsegraph-rect": "^1.4.7",
     "parsegraph-shader": "^1.5.6"
   },
