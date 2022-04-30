@@ -17,7 +17,7 @@
   "dependencies": {
     "parsegraph-color": "^1.4.7",
     "parsegraph-method": "^1.4.22",
-    "parsegraph-rect": "^1.4.7",
+    "parsegraph-rect": "^1.5.1",
     "parsegraph-shader": "^1.5.6"
   },
   "devDependencies": {
