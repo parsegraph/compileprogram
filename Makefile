@@ -5,7 +5,6 @@ SCRIPT_FILES = \
 	src/index.ts \
 	src/ProxyGLProvider.ts \
 	src/GLProvider.ts \
-	src/DebugGLProvider.ts \
 	src/WebGL2Provider.ts \
 	src/glsl.d.ts \
 	src/BasicGLProvider.ts \
