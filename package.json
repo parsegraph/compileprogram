@@ -43,6 +43,7 @@
     "jest": "^28.0.3",
     "jsdom": "^19.0.0",
     "jsdom-global": "^3.0.2",
+    "parsegraph-checkglerror": "^1.5.3",
     "prettier": "^2.6.2",
     "raw-loader": "^4.0.2",
     "source-map-loader": "^3.0.1",
