@@ -15,10 +15,10 @@
   },
   "homepage": "https://github.com/parsegraph/compileprogram#readme",
   "dependencies": {
-    "parsegraph-color": "^1.4.8",
-    "parsegraph-method": "^1.4.22",
-    "parsegraph-rect": "^1.5.1",
-    "parsegraph-shader": "^1.5.6"
+    "parsegraph-color": "^1.4.10",
+    "parsegraph-method": "^1.4.23",
+    "parsegraph-rect": "^1.5.2",
+    "parsegraph-shader": "^1.5.7"
   },
   "devDependencies": {
     "@babel/cli": "^7.17.10",
@@ -43,7 +43,7 @@
     "jest": "^28.0.3",
     "jsdom": "^19.0.0",
     "jsdom-global": "^3.0.2",
-    "parsegraph-checkglerror": "^1.5.3",
+    "parsegraph-checkglerror": "^1.5.4",
     "prettier": "^2.6.2",
     "raw-loader": "^4.0.2",
     "source-map-loader": "^3.0.1",
@@ -58,6 +58,6 @@
     "webpack-cli": "^4.9.2"
   },
   "peerDependencies": {
-    "parsegraph-checkglerror": "^1.5.3"
+    "parsegraph-checkglerror": "^1.5.4"
   }
 }
