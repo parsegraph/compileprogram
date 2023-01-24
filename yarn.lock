@@ -4116,10 +4116,10 @@ parsegraph-rect@^1.5.4:
   resolved "https://registry.yarnpkg.com/parsegraph-rect/-/parsegraph-rect-1.5.4.tgz#2d6e75785133227cf7df5c8d4798dfd4e0bc91be"
   integrity sha512-zDQLb7w5iEUIZuBhfYzt7Zr61vtzGSdA3QSaT9wbnDhTJv1TkIsdPVYmLbyrIZywtPeB0yezT4FT8iP4xtojSg==
 
-parsegraph-shader@^1.5.8:
-  version "1.5.8"
-  resolved "https://registry.yarnpkg.com/parsegraph-shader/-/parsegraph-shader-1.5.8.tgz#6413de310e32392f904cc350c12dfe35707d0643"
-  integrity sha512-2SuWPjYuLyiJuUQUpVY2rCOaHUZ2yFs6TuMpNKvrc4zROg6xrRyyPQP2mNScbAWk8NA4vssg7j2MLvQsNFvK3w==
+parsegraph-shader@^1.5.10:
+  version "1.5.10"
+  resolved "https://registry.yarnpkg.com/parsegraph-shader/-/parsegraph-shader-1.5.10.tgz#326893459ac96490fc5d3bcd6806674b3175105c"
+  integrity sha512-b5kq/G0FZ7Osi1UAqTakjNW/KwEDeDpU9hSGwvifFk4wCIxPAJqdy/sEPbOLp2RVhPGBvD/NeBAgwWn50OIf7A==
 
 path-exists@^3.0.0:
   version "3.0.0"
