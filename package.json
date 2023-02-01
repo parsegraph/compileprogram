@@ -15,10 +15,10 @@
   },
   "homepage": "https://github.com/parsegraph/compileprogram#readme",
   "dependencies": {
-    "parsegraph-color": "^1.4.12",
-    "parsegraph-method": "^1.4.25",
-    "parsegraph-rect": "^1.5.4",
-    "parsegraph-shader": "^1.5.10"
+    "parsegraph-color": "^1.4.13",
+    "parsegraph-method": "^1.4.26",
+    "parsegraph-rect": "^1.5.5",
+    "parsegraph-shader": "^1.5.11"
   },
   "devDependencies": {
     "@babel/cli": "^7.20.7",
